@@ -2,6 +2,12 @@ import React from 'react'
 import img66 from "../../../public/ring/img7.jpg";
 import Image from 'next/image';
 import Custom from '../../components/customize/Custom';
+
+
+export const metadata = {
+  title: "Custom Jewelry Chicago | Design Your Own Jewelry",
+  description: "Turn your vision into reality! Share a description and upload an image of your dream design, and our expert jewelers in Chicago will craft a one-of-a-kind piece.",
+};
 const app = () => {
   return (
     <div className='container mx-auto mt-9 px-4 lg:px-0'>

@@ -4,6 +4,11 @@ import Image from "next/image";
 import mainUrl from "@/components/shared/mainUrl";
 import { useEffect, useState } from "react";
 
+
+export const metadata = {
+  title: "About Cathy’s Jewelry | Trusted Chicago Jeweler",
+  description: "Learn about Cathy’s Jewelry, a locally trusted Chicago jewelry store specializing in fine jewelry, custom designs, expert repairs, and gold buying with personalized service.",
+};
 const page = () => {
   const [about, setAbout] = useState(null);
   useEffect(() => {

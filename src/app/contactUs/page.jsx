@@ -1,6 +1,12 @@
 import hero from '../../../public/shared/sss.jpg'
 import Image from 'next/image'
 import Contact from '../../components/shared/Contact'
+
+
+export const metadata = {
+  title: "Contact Cathy’s Jewelry | Jewelry Repair & Service in Chicago",
+  description: "Need jewelry repair or custom design in Chicago? Contact Cathy’s Jewelry for ring resizing, stone replacement, engraving, and expert consultations.",
+};
 const page = () => {
   return (
     <div className='container m-auto mt-9 px-4 lg:px-0'>

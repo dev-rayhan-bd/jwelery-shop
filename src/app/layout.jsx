@@ -21,14 +21,28 @@ const geistMono = {
   weight: "100 900",
 };
 
+// export const metadata = {
+//   title: {
+//     default: "Cathy’s Jewelry | Jewelry Store in Chicago",
+//     template: "%s | Cathy’s Jewelry"
+//   },
+//   description: "Cathy's Jewelry is a trusted Chicago jewelry store specializing in custom jewelry design, professional jewelry repair, gold buying, and fine jewelry sales.",
+//   keywords: ["jewelry store Chicago", "engagement rings Chicago", "jewelry repair Chicago", "sell gold Chicago", "custom jewelry Chicago"],
+//   icons: {
+//     icon: "/logo.png", 
+//   },
+// };
 export const metadata = {
-  title: "Jeweller Website",
-  description: "Jeweller Website",
+  title: {
+    default: "Cathy’s Jewelry | Jewelry Store in Chicago | Custom, Repairs & Gold Buying",
+    template: "%s | Cathy’s Jewelry"
+  },
+  description: "Cathy's Jewelry is a trusted Chicago jewelry store specializing in custom jewelry design, professional jewelry repair, gold buying, engraving, and fine jewelry sales.",
+  keywords: ["jewelry store Chicago", "engagement rings Chicago", "jewelry repair Chicago", "sell gold Chicago", "custom jewelry Chicago"],
   icons: {
     icon: "/logo.png",
   },
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={geist.className}>

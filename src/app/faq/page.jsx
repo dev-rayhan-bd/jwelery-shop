@@ -3,6 +3,11 @@ import hero from "../../../public/shared/sss.jpg";
 import Image from "next/image";
 import FaqSection from "../../components/shared/FaqSection";
 import Link from "next/link";
+
+export const metadata = {
+  title: "FAQs",
+  description: "Common questions about orders, shipping, returns, and custom jewelry at Cathy’s Jewelry.",
+};
 const page = () => {
   return (
     <div className="container m-auto mt-9 px-4 lg:px-0">
