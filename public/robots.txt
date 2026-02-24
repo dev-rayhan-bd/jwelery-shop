@@ -1,0 +1,21 @@
+# Allow all search engines to crawl the site
+User-agent: *
+
+# Allow everything by default
+Allow: /
+
+# Disallow private user and functional routes
+Disallow: /myCart
+Disallow: /checkOut
+Disallow: /myOrder
+Disallow: /profile
+Disallow: /editProfile
+Disallow: /changPass
+Disallow: /changeAddress
+Disallow: /favorite
+Disallow: /auth/
+Disallow: /api/
+
+# Host and Sitemap
+Host: https://cathysjewelry.net
+Sitemap: https://cathysjewelry.net/sitemap.xml

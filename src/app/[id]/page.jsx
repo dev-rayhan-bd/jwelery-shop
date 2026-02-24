@@ -3,13 +3,26 @@ import SubCategories from "../../components/shared/SubCategories";
 import mainUrl from "../../components/shared/mainUrl";
 
 
+
+
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const category = await mainUrl(`/categories/${id}`);
 
   return {
     title: `${category?.name || "Category"} in Chicago`,
-    description: category?.details || `Shop ${category?.name} at Cathy’s Jewelry in Chicago. Custom designs and fine jewelry available.`,
+    description: category?.details,
+    openGraph: {
+      title: `${category?.name} | Cathy’s Jewelry`,
+      description: category?.details,
+      images: [
+        {
+          url: category?.img_url || '/og-image.jpg',
+          width: 800,
+          height: 600,
+        }
+      ],
+    },
   };
 }
 const page = async ({ params }) => {

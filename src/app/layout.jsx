@@ -21,26 +21,36 @@ const geistMono = {
   weight: "100 900",
 };
 
-// export const metadata = {
-//   title: {
-//     default: "Cathy’s Jewelry | Jewelry Store in Chicago",
-//     template: "%s | Cathy’s Jewelry"
-//   },
-//   description: "Cathy's Jewelry is a trusted Chicago jewelry store specializing in custom jewelry design, professional jewelry repair, gold buying, and fine jewelry sales.",
-//   keywords: ["jewelry store Chicago", "engagement rings Chicago", "jewelry repair Chicago", "sell gold Chicago", "custom jewelry Chicago"],
-//   icons: {
-//     icon: "/logo.png", 
-//   },
-// };
+// src/app/layout.jsx
+
 export const metadata = {
+  metadataBase: new URL('https://cathysjewelry.net'), 
   title: {
-    default: "Cathy’s Jewelry | Jewelry Store in Chicago | Custom, Repairs & Gold Buying",
+    default: "Cathy’s Jewelry | Jewelry Store in Chicago",
     template: "%s | Cathy’s Jewelry"
   },
-  description: "Cathy's Jewelry is a trusted Chicago jewelry store specializing in custom jewelry design, professional jewelry repair, gold buying, engraving, and fine jewelry sales.",
-  keywords: ["jewelry store Chicago", "engagement rings Chicago", "jewelry repair Chicago", "sell gold Chicago", "custom jewelry Chicago"],
-  icons: {
-    icon: "/logo.png",
+  description: "Cathy's Jewelry is a trusted Chicago jewelry store specializing in custom design, professional repair, and fine jewelry.",
+  openGraph: {
+    title: "Cathy’s Jewelry | Chicago's Trusted Jeweler",
+    description: "Custom Jewelry, Repairs, and Gold Buying in Chicago.",
+    url: 'https://cathysjewelry.net',
+    siteName: "Cathy’s Jewelry",
+    images: [
+      {
+        url: '/og-image.jpg', // public picture size 1200*630
+        width: 1200,
+        height: 630,
+        alt: "Cathy’s Jewelry Storefront",
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Cathy’s Jewelry",
+    description: "Expert Jewelry Repairs and Custom Designs in Chicago.",
+    images: ['/og-image.jpg'],
   },
 };
 export default function RootLayout({ children }) {
