@@ -12,7 +12,7 @@ const GlobalSearchModal = ({ isModalOpen, handleOk, handleCancel }) => {
         { skip: !search }
     );
 
-    console.log(data);
+    // console.log(data);
     const handleSearch = (e) => {
         setSearch(e.target.value);
     }

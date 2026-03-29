@@ -10,7 +10,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useGetReviewTotalQuery } from "@/redux/Api/webmanageApi";
 
 const DetailsDescription = ({ product, id, similarProducts }) => {
-  console.log('similar product', similarProducts);
+  // console.log('similar product', similarProducts);
   const { data: reviewData,refetch:reviewRefetch } = useGetReviewTotalQuery(id);
   const [activeTab, setActiveTab] = useState("description");
 

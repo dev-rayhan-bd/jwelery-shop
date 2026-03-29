@@ -27,7 +27,7 @@ const VeryfyRegister = () => {
       setLoading(false);
     } catch (error) {
       toast.error(error.data.message);
-      console.log(error);
+      // console.log(error);
       setLoading(false);
     }
   }
@@ -42,7 +42,7 @@ const VeryfyRegister = () => {
       })
       .catch((error) => {
         toast.error(error.data.message);
-        console.log(error);
+        // console.log(error);
       })
   }
 

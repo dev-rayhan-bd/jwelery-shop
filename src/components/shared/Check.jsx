@@ -19,7 +19,7 @@ export const Check = () => {
   const [addOrder, { isLoading }] = useAddOrderSubmitMutation()
   const cart = useSelector((store) => store.cart.products);
   const totalPrice = useSelector((store) => store.cart.total);
-  console.log("cart data from checkout--->",cart)
+  // console.log("cart data from checkout--->",cart)
   const fee = 5.00
   // const totalPrice = cart.reduce((acc, item) => {
   //   const price = item.discount_price ? item.discount_price : item.price;
@@ -44,7 +44,7 @@ export const Check = () => {
     try {
       const response = await addOrder(data).unwrap();
       toast.success(response.message);
-      console.log(response?.stripe_url)
+      // console.log(response?.stripe_url)
       window.open(response?.stripe_url, '_blank')
 
     } catch (error) {

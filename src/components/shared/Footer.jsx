@@ -16,7 +16,7 @@ const Footer = () => {
   const { data: contactInfo } = useGetContactUsInfoQuery();
   const { data: category } = useGetCategoryQuery();
   const { data: social } = useGetSocialLinksQuery();
-  console.log(social);
+  // console.log(social);
 
   const categoryItems =
     (category?.slice(0, 5).map((cat) => ({

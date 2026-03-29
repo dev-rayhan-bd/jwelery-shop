@@ -23,7 +23,7 @@ const Forget = () => {
       setLoading(false);
     } catch (error) {
       toast.error(error.data.message);
-      console.log(error);
+      // console.log(error);
       setLoading(false);
     }
   };

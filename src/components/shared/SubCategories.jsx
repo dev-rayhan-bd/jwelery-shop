@@ -58,7 +58,7 @@ const SubCategories = ({ categorys, categoryId }) => {
         }
       );
 
-      console.log(fetched);
+      // console.log(fetched);
 
       setProducts(fetched);
 

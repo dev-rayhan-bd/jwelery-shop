@@ -35,7 +35,7 @@ const EditProfileSection = () => {
       toast.success(response.message);
     } catch (error) {
       toast.error(error.data.message);
-      console.log(error);
+      // console.log(error);
     }
   };
   return (

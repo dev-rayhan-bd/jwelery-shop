@@ -5,7 +5,7 @@ export function middleware(request) {
     // console.log(path);
 
     const token = request.cookies.get('jewellery-web-token');
-    console.log("from middleware", token);
+    // console.log("from middleware", token);
 
     if (!token) {
         // const redirectUrl = "/auth/signIn"

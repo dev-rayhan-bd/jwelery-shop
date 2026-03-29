@@ -37,7 +37,7 @@ const baseQueryWithRefreshToken = async (args, api, extraOptions) => {
     // if (status === 404 || status === 403) {
     //   message.error(data?.message || "Something went wrong.");
     // }
-    console.log(result.error);
+    // console.log(result.error);
     // Handle 401 (Unauthorized) - Refresh Token Logic
     if (status === 401) {
 

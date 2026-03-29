@@ -34,7 +34,7 @@ const SignInSection = () => {
     } catch (error) {
       toast.error(error.data.message);
       setLoading(false)
-      console.log(error);
+      // console.log(error);
     }
   }
   return (

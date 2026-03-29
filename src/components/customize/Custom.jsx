@@ -31,7 +31,7 @@ const Custom = () => {
   };
 
   const onFinish = async (values) => {
-    console.log("Received values:", values);
+    // console.log("Received values:", values);
     const formData = new FormData();
 
     formData.append("type", values?.type);

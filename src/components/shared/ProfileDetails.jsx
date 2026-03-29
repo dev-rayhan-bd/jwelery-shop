@@ -7,7 +7,7 @@ import { useGetProfileQuery } from "@/redux/Api/userAPi";
 
 const ProfileDetails = () => {
   const { data: profile } = useGetProfileQuery();
-  console.log(profile);
+  // console.log(profile);
   return (
     <div className=" mt-10 md:grid grid-cols-12 gap-6">
       {/* Left Section */}

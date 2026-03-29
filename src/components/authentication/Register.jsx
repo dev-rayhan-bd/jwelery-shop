@@ -25,14 +25,14 @@ const Register = () => {
       const response = await signUp(data).unwrap();
       localStorage.setItem("email", values.email);
       toast.success(response.message);
-      console.log(response);
+      // console.log(response);
 
       setLoading(false)
       router.push("/auth/signUp/verifyRegisterOtp");
 
     } catch (error) {
       toast.error(error.data.message);
-      console.log(error);
+      // console.log(error);
       setLoading(false)
     }
   }
