@@ -11,10 +11,10 @@ import ProductSkeleton from "../../components/Skeleton/ProductSkeleton";
 
 const page = () => {
   const { data: favorite, isLoading } = useGetFavoritesQuery();
-  console.log(favorite?.products)
+  // console.log(favorite?.products)
   const [addFavorite] = useAddFavoriteMutation();
   const handleFavorite = async (record) => {
-    console.log(record);
+    // console.log(record);
     const data = {
       product_id: record,
       type: "remove",

@@ -7,7 +7,7 @@ const MainTab = () => {
   const [selectedTab, setSelectedTab] = useState("all");
 
   const { data: myOrder, isLoading: isLoadingMyOrder } = useGetMyOrderQuery()
-  console.log('myOrder', myOrder);
+  // console.log('myOrder', myOrder);
   const { data: myCustomOrder, isLoading: isLoadingMyCustomOrder } = useGetMyCustomOrderQuery()
   const isLoading = isLoadingMyOrder || isLoadingMyCustomOrder;
 

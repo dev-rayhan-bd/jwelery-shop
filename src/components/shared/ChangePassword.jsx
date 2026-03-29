@@ -32,7 +32,7 @@ const ChangePassword = () => {
       const response = await changePassword(data).unwrap();
       toast.success(response.message);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
       toast.error(error.data.message);
     }
   }

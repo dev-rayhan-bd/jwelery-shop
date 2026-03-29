@@ -9,14 +9,14 @@ import {
 } from "../../redux/Api/webmanageApi";
 import { toast } from "react-toastify";
 const ReviewTab = ({ id , product,reviewRefetch}) => {
-  console.log(id);
+  // console.log(id);
   const [sortOrder, setSortOrder] = useState("");
   const [filterType, setFilterType] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 8;
   const { data: reviewData,refetch } = useGetReviewQuery({id,  page: currentPage,
     limit: pageSize, sort: sortOrder, rating:filterType,});
-  console.log(reviewData);
+  // console.log(reviewData);
   const [addReview] = useAddReviewMutation();
  const formRef = useRef(null);
   const handleRatingChange = (value) => {
@@ -37,7 +37,7 @@ const ReviewTab = ({ id , product,reviewRefetch}) => {
       rating: values.rating,
       product_id: id,
     };
-    console.log("Received values:", values);
+    // console.log("Received values:", values);
     try {
       const response = await addReview(data).unwrap();
       toast.success(response.message);

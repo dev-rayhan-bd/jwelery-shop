@@ -15,7 +15,7 @@ const DetailsSection = ({ product }) => {
   const [selectedSize, setSelectedSize] = useState("");
 
   const products = useSelector((store) => store.cart.products);
-  console.log("prod ", product);
+  // console.log("prod ", product);
 
   const [addFavorite] = useAddFavoriteMutation();
   const savings =
@@ -45,7 +45,7 @@ const DetailsSection = ({ product }) => {
   const isButtonDisabled = !isColorSelected || !isSizeSelected;
 
   const handleFavorite = async (record) => {
-    console.log(record);
+    // console.log(record);
     const data = {
       product_id: record,
       type: "add",

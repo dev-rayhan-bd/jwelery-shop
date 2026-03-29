@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 const Custom = ({ myCustomOrder }) => {
-  console.log(myCustomOrder);
+  // console.log(myCustomOrder);
 
   return (
     <div className="mt-6 overflow-x-auto">

@@ -13,7 +13,7 @@ import { Spin, ConfigProvider } from "antd";  // Ensure Spin is properly importe
 const CardShop = ({ item }) => {
   const [addFavorite, { isLoading }] = useAddFavoriteMutation();
   // const dispatch = useDispatch();
-  console.log(item);
+  // console.log(item);
 
   // const increaseQuantity = () => {
   //   dispatch(
@@ -24,7 +24,7 @@ const CardShop = ({ item }) => {
   // };
 
   const handleFavorite = async (id) => {
-    console.log('clicked favorite', id);
+    // console.log('clicked favorite', id);
     // if (!item?._id) {
     //   toast.error("Invalid product data");
     //   return;
