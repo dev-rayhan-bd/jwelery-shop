@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 const baseUrl = "http://13.60.228.122:3000";
 // const baseUrl = "http://10.10.20.26:3000";
 
-// Helper function to get the token
+// Helper function to get the tokenn
 const getToken = () => {
   if (typeof window === "undefined") {
     return null;
